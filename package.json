@@ -13,7 +13,7 @@
   "dependencies": {
     "animejs": "^3.2.0",
     "lodash": "^4.17.20",
-    "tailwindcss": "^1.8.10"
+    "ress": "^3.0.0"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.2",
