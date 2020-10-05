@@ -1,0 +1,23 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.associations": {
+    ".eslintrc": "jsonc",
+    ".prettierrc": "jsonc",
+    ".optipackrc": "jsonc",
+    ".renovaterc": "jsonc"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [".renovaterc"],
+      "url": "http://docs.renovatebot.com/renovate-schema.json"
+    }
+  ]
+}

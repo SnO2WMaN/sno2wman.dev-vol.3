@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["plugin:@shopify/typescript", "plugin:@shopify/prettier"],
+  "rules": {
+    "import/order": [0]
+  },
+  "overrides": []
+}

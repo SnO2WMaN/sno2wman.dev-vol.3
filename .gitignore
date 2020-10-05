@@ -1,0 +1,7 @@
+# Build outpts
+.build
+build
+web_modules
+
+# Dependencies
+node_modules
