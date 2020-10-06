@@ -8,7 +8,7 @@ import {shuffle} from 'lodash';
     .querySelectorAll('.socials-wrapper > .foreground')
     .forEach(($foreground, i) => {
       const direction = (i === 0 ? 1 : -1) * (seed % 2 === 0 ? 1 : -1);
-      anime.timeline().add({
+      anime({
         targets: $foreground.querySelectorAll('.cover'),
         easing: (_, j, len) =>
           `cubicBezier(${[
@@ -22,6 +22,9 @@ import {shuffle} from 'lodash';
           j % 2 === 0 ? [`${direction * 101}%`, `${direction * -101}%`] : 0,
         translateY: (_, j) =>
           j % 2 === 1 ? [`${direction * 101}%`, `${direction * -101}%`] : 0,
+        complete() {
+          $foreground.remove();
+        },
       });
     });
 
