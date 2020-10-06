@@ -4,7 +4,8 @@
     ".eslintrc": "jsonc",
     ".prettierrc": "jsonc",
     ".optipackrc": "jsonc",
-    ".renovaterc": "jsonc"
+    ".renovaterc": "jsonc",
+    ".postcssrc": "jsonc"
   },
   "files.exclude": {
     "**/.git": true,

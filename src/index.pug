@@ -1,0 +1,66 @@
+doctype html
+
+html
+  head
+    meta(charset="utf-8")
+    meta(name="description" content="SnO2WMaN's Website")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="og:type" content="website")
+    meta(name="og:title" content="sno2wman.dev")
+    meta(name="og:site_name" content="sno2wman.dev")
+    meta(name="og:url" content="https://sno2wman.dev/")
+    meta(name="twitter:title" content="sno2wman.dev")
+    meta(name="twitter:url" content="https://sno2wman.dev/")
+    meta(name="twitter:site" content="@SnO2WMaN")
+    link(rel="shortcut icon" href="https://www.gravatar.com/avatar/9a828752a7771c3bf43e3bea39d9cf57?s=512" )
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap")
+    link(rel="stylesheet" href="./index.scss" )
+  body
+    header
+      .profile
+        img(src="https://www.gravatar.com/avatar/9a828752a7771c3bf43e3bea39d9cf57?s=512")
+        span SnO2WMaN
+    main
+      .socials-wrapper
+        .foreground
+          .cover
+          .cover
+          .cover
+          .cover
+          .cover
+        .foreground
+          .cover
+          .cover
+          .cover
+          .cover
+          .cover
+        ul.socials
+          -
+            const links = {
+              "twitter": "https://twitter.com/SnO2WMaN",
+              "github": "https://github.com/SnO2WMaN",
+              "spotify": "https://open.spotify.com/user/sno2wman",
+              "soundcloud": "https://soundcloud.com/sno2wman",
+              "steam": "https://steamcommunity.com/id/SnO2WMaN",
+              "speaker-deck": "https://speakerdeck.com/sno2wman",
+              "discord": "discord:SnO2WMaN#9459",
+              "codepen": "https://codepen.io/SnO2WMaN",
+              "lastfm": "https://www.last.fm/user/SnO2WMaN",
+              "npm": "https://www.npmjs.com/~sno2wman",
+              "pixiv": "https://www.pixiv.net/member.php?id=31358190",
+              "annict": "https://annict.jp/@SnO2WMaN",
+              "bookmeter": "https://bookmeter.com/users/1011664",
+              "ko-fi": "https://ko-fi.com/sno2wman",
+              "scrapbox": "https://scrapbox.io/sno2wman",
+              "buymeacoffee": "https://www.buymeacoffee.com/sno2wman",
+              "zenn": "https://zenn.dev/sno2wman",
+              "mixcloud": "https://www.mixcloud.com/SnO2WMaN/"
+            }
+          each link, name in links
+            li(class=name)
+              a(href=link, target="_blank")
+              .cover
+              .cover
+              .cover
+              img(src=`./assets/brands/${name}.svg`, alt=name)
+    script(src="./index.js")

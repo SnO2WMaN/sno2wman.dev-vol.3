@@ -9,7 +9,7 @@ pre-commit:
     prettier:
       tags: frontend lint
       files: git diff --name-only --staged
-      glob: '*.{json,yml,yaml,md}'
+      glob: '*.{css,scss,json,yml,yaml,md}'
       run: prettier --check {staged_files}
     prettier-rcfiles:
       tags: frontend lint
